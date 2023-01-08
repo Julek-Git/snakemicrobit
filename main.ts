@@ -33,26 +33,26 @@ snake2.set(LedSpriteProperty.Direction, 0)
 basic.forever(function () {
     if (snake0.isTouchingEdge()) {
         if (snake0.get(LedSpriteProperty.Direction) == 0 || snake0.get(LedSpriteProperty.Direction) == 180) {
-            snake0.set(LedSpriteProperty.Y, snake0.get(LedSpriteProperty.Y) - 4)
+            snake0.set(LedSpriteProperty.Y, Math.abs(snake0.get(LedSpriteProperty.Y) - 4))
         }
         if (snake0.get(LedSpriteProperty.Direction) == 90 || snake0.get(LedSpriteProperty.Direction) == 180) {
-            snake0.set(LedSpriteProperty.X, snake0.get(LedSpriteProperty.X) - 4)
+            snake0.set(LedSpriteProperty.X, Math.abs(snake0.get(LedSpriteProperty.X) - 4))
         }
     }
     if (snake1.isTouchingEdge()) {
         if (snake1.get(LedSpriteProperty.Direction) == 0 || snake1.get(LedSpriteProperty.Direction) == 180) {
-            snake1.set(LedSpriteProperty.Y, snake1.get(LedSpriteProperty.Y) - 4)
+            snake1.set(LedSpriteProperty.Y, Math.abs(snake1.get(LedSpriteProperty.Y) - 4))
         }
         if (snake1.get(LedSpriteProperty.Direction) == 90 || snake1.get(LedSpriteProperty.Direction) == 180) {
-            snake1.set(LedSpriteProperty.X, snake1.get(LedSpriteProperty.X) - 4)
+            snake1.set(LedSpriteProperty.X, Math.abs(snake1.get(LedSpriteProperty.X) - 4))
         }
     }
     if (snake2.isTouchingEdge()) {
         if (snake2.get(LedSpriteProperty.Direction) == 0 || snake2.get(LedSpriteProperty.Direction) == 180) {
-            snake2.set(LedSpriteProperty.Y, snake2.get(LedSpriteProperty.Y) - 4)
+            snake2.set(LedSpriteProperty.Y, Math.abs(snake2.get(LedSpriteProperty.Y) - 4))
         }
         if (snake2.get(LedSpriteProperty.Direction) == 90 || snake2.get(LedSpriteProperty.Direction) == 180) {
-            snake2.set(LedSpriteProperty.X, snake2.get(LedSpriteProperty.X) - 4)
+            snake2.set(LedSpriteProperty.X, Math.abs(snake2.get(LedSpriteProperty.X) - 4))
         }
     }
     snake0.move(1)
